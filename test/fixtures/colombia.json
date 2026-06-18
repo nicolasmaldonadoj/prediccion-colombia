@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "id": "100",
+      "title": "Colombia Presidential Election Winner 2026",
+      "slug": "colombia-presidential-election-2026",
+      "active": true,
+      "closed": false,
+      "updatedAt": "2026-06-18T17:30:00Z",
+      "volume": 4200000,
+      "liquidity": 1100000,
+      "markets": [
+        {
+          "id": "m1", "question": "Will candidate Petro's bloc win?",
+          "groupItemTitle": "Gustavo Bolívar", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.62\", \"0.38\"]",
+          "oneWeekPriceChange": 0.05
+        },
+        {
+          "id": "m2", "question": "Will the opposition win?",
+          "groupItemTitle": "Vicky Dávila", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.28\", \"0.72\"]",
+          "oneWeekPriceChange": -0.03
+        },
+        {
+          "id": "m3", "question": "Will the centrist win?",
+          "groupItemTitle": "Sergio Fajardo", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.10\", \"0.90\"]",
+          "oneWeekPriceChange": 0.00
+        },
+        {
+          "id": "m4", "question": "Will a long-shot win?",
+          "groupItemTitle": "Otro", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.002\", \"0.998\"]",
+          "oneWeekPriceChange": 0.00
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "title": "Colombia presidential election: turnout above 60%?",
+      "slug": "colombia-turnout-2026",
+      "active": true, "closed": false,
+      "updatedAt": "2026-06-18T17:00:00Z",
+      "volume": 90000, "liquidity": 5000,
+      "markets": [
+        {
+          "id": "m5", "question": "Will turnout exceed 60%?", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.45\", \"0.55\"]",
+          "oneWeekPriceChange": 0.01
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "title": "US Presidential Election 2028",
+      "slug": "us-2028",
+      "active": true, "closed": false,
+      "updatedAt": "2026-06-18T17:00:00Z",
+      "volume": 99000000, "liquidity": 20000000,
+      "markets": [
+        {
+          "id": "m6", "question": "Will the incumbent party win?", "active": true, "closed": false,
+          "outcomes": "[\"Yes\", \"No\"]", "outcomePrices": "[\"0.50\", \"0.50\"]",
+          "oneWeekPriceChange": 0.00
+        }
+      ]
+    }
+  ]
+}
