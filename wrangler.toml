@@ -1,0 +1,6 @@
+name = "prediccion-colombia"
+main = "src/worker.js"
+compatibility_date = "2026-06-01"
+
+# El subdominio workers.dev viene habilitado por defecto:
+# prediccion-colombia.<account>.workers.dev
