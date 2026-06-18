@@ -1,0 +1,12 @@
+# Secrets — nunca subir
+.env
+.dev.vars
+.cf-token
+
+# Dependencias / build
+node_modules/
+dist/
+.wrangler/
+
+# Sistema
+.DS_Store
