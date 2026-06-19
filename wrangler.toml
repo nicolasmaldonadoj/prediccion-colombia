@@ -2,5 +2,15 @@ name = "prediccion-colombia"
 main = "src/worker.js"
 compatibility_date = "2026-06-01"
 
-# El subdominio workers.dev viene habilitado por defecto:
+# Mantener viva también la URL *.workers.dev como respaldo.
+workers_dev = true
+
+# Dominio propio (la zona ya está activa en Cloudflare).
+# Cloudflare crea el registro DNS y el certificado automáticamente.
+routes = [
+  { pattern = "prediccion-colombia.org", custom_domain = true },
+  { pattern = "www.prediccion-colombia.org", custom_domain = true }
+]
+
+# El subdominio workers.dev sigue activo como respaldo:
 # prediccion-colombia.<account>.workers.dev

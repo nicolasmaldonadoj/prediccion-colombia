@@ -147,6 +147,9 @@ export const PAGE_HTML = `<!doctype html>
   .nota p { font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); }
   .nota p + p { margin-top: 9px; }
   .nota b { color: var(--ink); font-weight: 600; }
+  .nota .aporta { margin-top: 12px; color: var(--ink-faint); }
+  .nota a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .nota a:hover { color: var(--live); }
 
   .disclaimer {
     margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule-soft);
@@ -199,13 +202,15 @@ export const PAGE_HTML = `<!doctype html>
     <section class="nota">
       <h2>Por qué esta página existe</h2>
       <p>
-        El <b>Gobierno colombiano</b> ordenó a los proveedores de internet bloquear Polymarket por
-        operar apuestas sin licencia, incluidas apuestas sobre las elecciones. El bloqueo es a la
-        plataforma y a los proveedores, no a los usuarios.
+        El <b>Gobierno colombiano</b> ordenó a los proveedores de internet bloquear Polymarket.
       </p>
       <p>
         A pocos días de las <b>elecciones del domingo</b>, este pronóstico es información de interés
         público. Esta página lo hace accesible para cualquiera, gratis y sin registro.
+      </p>
+      <p class="aporta">
+        Es un proyecto abierto y comunitario. ¿Quieres aportar o mejorarlo? El código es público en
+        <a href="https://github.com/nicolasmaldonadoj/prediccion-colombia" target="_blank" rel="noopener">GitHub</a>.
       </p>
     </section>
 
