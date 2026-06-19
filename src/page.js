@@ -137,8 +137,19 @@ export const PAGE_HTML = `<!doctype html>
   button:disabled { opacity: .4; cursor: default; }
   button:disabled:hover { background: transparent; color: var(--ink); }
 
+  .nota {
+    margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); max-width: 60ch;
+  }
+  .nota h2 {
+    font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 10px;
+  }
+  .nota p { font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); }
+  .nota p + p { margin-top: 9px; }
+  .nota b { color: var(--ink); font-weight: 600; }
+
   .disclaimer {
-    margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--rule);
+    margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule-soft);
     font-size: 11.5px; line-height: 1.65; color: var(--ink-faint); max-width: 60ch;
   }
   .disclaimer b { color: var(--ink-soft); font-weight: 600; }
@@ -185,6 +196,19 @@ export const PAGE_HTML = `<!doctype html>
       <button id="refresh">Actualizar</button>
     </div>
 
+    <section class="nota">
+      <h2>Por qué esta página existe</h2>
+      <p>
+        El <b>Gobierno colombiano</b> ordenó a los proveedores de internet bloquear Polymarket por
+        operar apuestas sin licencia, incluidas apuestas sobre las elecciones. El bloqueo es a la
+        plataforma y a los proveedores, no a los usuarios.
+      </p>
+      <p>
+        A pocos días de las <b>elecciones del domingo</b>, este pronóstico es información de interés
+        público. Esta página lo hace accesible para cualquiera, gratis y sin registro.
+      </p>
+    </section>
+
     <p class="disclaimer">
       Esto es un <b>mercado de predicción</b>: gente apostando dinero real sobre un resultado, no
       una encuesta ni un conteo oficial. El porcentaje es el precio que el mercado le pone a cada
@@ -194,7 +218,7 @@ export const PAGE_HTML = `<!doctype html>
   </div>
 
 <script>
-  var pctFmt = function (p) { return Math.round(p * 100) + "%"; };
+  var pctFmt = function (p) { return (p * 100).toFixed(1) + "%"; };
   var moneyFmt = function (n) {
     if (n >= 1e6) return "US$" + (n / 1e6).toFixed(1) + " M";
     if (n >= 1e3) return "US$" + Math.round(n / 1e3) + " mil";
